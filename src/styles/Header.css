@@ -1,0 +1,70 @@
+/* Шапка */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000; /* Черный фон */
+  padding: 20px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Легкая тень для объемности */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 10px;
+  filter: brightness(0) invert(1); /* Применяем инверсию цвета, чтобы сделать изображение белым */
+}
+
+
+.logo-text {
+  font-size: 20px; /* Уменьшаем шрифт */
+  font-weight: bold;
+  color: #b9ff21; 
+  letter-spacing: 1px; /* Немного увеличим расстояние между буквами */
+  font-family: 'Roboto', sans-serif; /* Приятный шрифт */
+  text-transform: uppercase; /* Все заглавные для лаконичности */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 16px; /* Уменьшаем размер шрифта */
+  color: #fff; /* Белый цвет для ссылок */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #b9ff21; /* Цвет при наведении */
+  text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,192 @@
+
+  /* Контейнер вакансий */
+  .jobs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  /* Стили для карточки вакансии */
+  .jobs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .job-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .job-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .job-card p {
+    margin-bottom: 12px;
+    color: #555;
+  }
+  
+  .job-card ul {
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  .job-card ul li {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  /* Кнопка отклика */
+  .apply-button {
+    display: inline-block;
+    background-color: #b9ff21;
+    color: #333;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .apply-button:hover {
+    background-color: #45efda;
+  }
+  
+  .apply-button:focus {
+    outline: none;
+  }
+  
+  /* Модальное окно */
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    padding: 20px;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 500px;
+    max-width: 90%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .close {
+    font-size: 28px;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .modal h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .modal form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .modal form input,
+  .modal form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .modal form button {
+    background-color: #b9ff21;
+    color: #333;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+  }
+  
+  .modal form button:hover {
+    background-color: #45efda;
+  }
+  
+  .modal form button:focus {
+    outline: none;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .jobs-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .job-card {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 28px;
+    }
+  
+    .job-card {
+      width: 90%;
+    }
+  
+    .modal-content {
+      width: 90%;
+    }
+  }
+  

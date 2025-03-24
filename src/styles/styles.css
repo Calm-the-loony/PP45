@@ -1,0 +1,422 @@
+/* Стили для секции фильтра */
+.parts-search {
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/fon1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .content h2 {
+    font-size: 36px;
+  }
+  
+  .content .highlight {
+    color: #b9ff21;
+  }
+  
+  
+/* Стили для секции */
+.featured-products {
+    text-align: center;
+    margin-top: 80px;
+    width: 100%;
+  }
+  
+  .featured-products h2 {
+    font-size: 28px;
+  }
+  
+  .red-line {
+    width: 320px;
+    height: 2px;
+    background-color: #FF8B00;
+    margin: 0 auto 20px;
+  }
+  
+  /* Стили для карусели */
+  .carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Вместо маргина на карточках */
+    width: 100%;
+    max-width: 1200px; /* Ограничиваем ширину карусели */
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden; /* Чтобы элементы не выходили за пределы */
+  }
+  
+  .product-card {
+    width: 270px;
+    height: 280px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.00);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .details {
+    padding: 10px;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  
+  /* Стили для секции "Почему именно наша компания" */
+  .why-choose-us {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .reasons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .reason-item {
+    width: 280px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 8px #b9ff21;
+  }
+  
+  .reason-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px #b9ff21;
+  }
+  
+  .reason-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+  .reason-text {
+    padding: 10px;
+  }
+  
+  .reason-text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .reason-text p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Стили для секции с этапами работы */
+  .work-stages {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    position: relative;
+  }
+  
+  .work-stages h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+  }
+  .stages-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .stage-item {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .stage-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stage-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+  .stage-text {
+    padding: 10px;
+  }
+  
+  .stage-text h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .stage-text p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 40px, 0);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  
+  .stage-item {
+    animation: fadeInUp 0.8s ease both;
+  }
+  
+  .stage-item:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .stage-item:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .stage-item:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  .stage-item:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  
+  .stage-item:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  
+  
+  /* Стили для страницы услуг */
+/* Стили для страницы услуг */
+.services-page {
+    margin-top: 80px;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.services-page h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 столбца */
+    gap: 20px; /* Уменьшаем пространство между карточками */
+    padding: 0 5%;
+}
+
+.service-item {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-item h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Стили для кнопки заявки */
+button {
+    padding: 10px 20px;
+    background-color: #b9ff21;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; /* Кнопка не растягивается на всю ширину */
+    margin-top: 30px; /* Добавляем отступ */
+}
+
+button:hover {
+    background-color: #a9ea1e;
+}
+
+/* Стили для модального окна */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none; /* Скрыто по умолчанию */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex; /* Показываем модальное окно */
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 500px; /* Устанавливаем ширину модального окна */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%; /* Устанавливаем ширину 100% для всех элементов формы */
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box; /* Включаем border и padding в общую ширину */
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Особый стиль для select */
+.form-group select {
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* Кнопка отправки формы */
+button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #45efda;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #36c4b4;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    color: #333;
+    cursor: pointer;
+}
