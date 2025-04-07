@@ -1,0 +1,23 @@
+.documents-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .documents-list li {
+    margin-bottom: 10px;
+  }
+  
+  .documents-list a {
+    color: #5578DF; /* Синий цвет для ссылок */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .documents-list a:hover {
+    text-decoration: underline;
+    color: #3e5db4; /* Тёмно-синий цвет при наведении */
+  }
+  
+  .documents-list a:active {
+                color: #2c4975; /* Цвет при активном нажатии */}

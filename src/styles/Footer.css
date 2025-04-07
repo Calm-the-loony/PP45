@@ -1,6 +1,6 @@
 /* Общий стиль подвала */
 .footer {
-  background-color: #000; /* Черный фон */
+  background-color: #000; /* Чёрный фон */
   color: #ccc;
   font-family: 'Roboto', sans-serif;
   padding: 30px 20px;
@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #333; /* Разделитель между секциями */
+  border-bottom: 1px solid #2f80ed; /* Разделитель в цвете акцента */
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
@@ -29,10 +29,11 @@
   text-decoration: none;
   color: #ccc;
   font-size: 14px;
+  transition: color 0.3s ease;
 }
 
 .footer-navigation a:hover {
-  color: #b9ff21;
+  color: #2f80ed; /* Акцент при наведении */
 }
 
 /* Контактная информация */
@@ -59,13 +60,13 @@
 }
 
 .social-icon {
-  color: #b9ff21;
+  color: #2f80ed; /* Акцентный цвет иконок */
   font-size: 24px;
   transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-  color: #9ecb1d;
+  color: #1e5ec6; /* Темнее акцентного при наведении */
 }
 
 /* Адаптивность */

@@ -6,11 +6,19 @@ const ContactPage = () => {
     <div className="container">
       <h1>Контакты</h1>
       <div className="contact-info">
-        <p><strong>ООО "Ростовгипрошахт"</strong></p>
-        <p>344000, г. Ростов-на-Дону, пр. Театральный, 89</p>
-        <p>Тел.: (863) 207-50-50</p>
-        <p>E-mail: <a href="mailto:rgsh@rgsh.org">rgsh@rgsh.org</a></p>
-        <p>Веб-сайт: <a href="http://www.rostovgiproshaht.com" target="_blank" rel="noopener noreferrer">www.rostovgiproshaht.com</a></p>
+        <p><strong>ООО "РОЙ-АЭРО"</strong></p>
+        <p><strong>Английское название:</strong> OOO "ROI-AERO"</p>
+        <p><strong>Адрес:</strong> 344000, Ростовская обл, г.о. город Ростов-на-Дону, г Ростов-на-Дону, ул Текучева, д. 215</p>
+        <p><strong>Уставной капитал:</strong> 10 000</p>
+        <p><strong>ОКФС:</strong> Частная собственность</p>
+        <p><strong>ОКОПФ:</strong> Общества с ограниченной ответственностью</p>
+        <p><strong>ОКОГУ:</strong> Организации, учрежденные юридическими лицами или гражданами, или юридическими лицами и гражданами совместно</p>
+        <p><strong>ИНН:</strong> 6163234060</p>
+        <p><strong>ОГРН:</strong> 1246100027425</p>
+        <p><strong>КПП:</strong> 616301001</p>
+        <p><strong>ОКАТО:</strong> Ростовская область, Ростов-на-Дону, Пролетарский</p>
+        <p><strong>ОКПО:</strong> 72565601</p>
+        <p><strong>ОКТМО:</strong> Ростовская область, Городские округа Ростовской области, г Ростов-на-Дону</p>
       </div>
       <div className="map">
         <iframe 
