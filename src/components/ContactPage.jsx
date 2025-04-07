@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/ContactPage.css'; // Подключаем стили
+import '../styles/ContactPage.css'; 
 
 const ContactPage = () => {
   return (

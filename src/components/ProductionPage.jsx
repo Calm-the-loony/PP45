@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/Production.css'; // Стиль для страницы
+import '../styles/Production.css'; 
 
 const ProductionPage = () => {
   const [selectedActivity, setSelectedActivity] = useState(null);

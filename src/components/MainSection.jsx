@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Добавляем импорт Link
+import { Link } from "react-router-dom"; 
 import "../styles/styles.css";
 
-// Импортируем изображения
 import reliabilityIcon from "../images/free-icon-smiley-142310.png";
 import qualityIcon from "../images/free-icon-thumb-up-like-13578170.png";
 import speedIcon from "../images/free-icon-airplane-31069.png";
@@ -119,7 +118,6 @@ const WorkStages = () => {
   );
 };
 
-// Основной компонент MainSection, который включает все остальные
 const MainSection = () => {
   return (
     <main>

@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo-container">
-        <FaPlane className="logo-icon" /> {/* ← Иконка вместо изображения */}
+        <FaPlane className="logo-icon" /> 
         <span className="logo-text">РОЙ-АЭРО</span>
       </div>
       <nav className="nav">

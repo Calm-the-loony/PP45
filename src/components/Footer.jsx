@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/Footer.css"; // Импортируем стили
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa'; // Импортируем иконки из библиотеки
+import "../styles/Footer.css"; 
+import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa'; 
 
 const Footer = () => {
   return (

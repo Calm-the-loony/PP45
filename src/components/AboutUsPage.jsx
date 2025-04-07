@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/About.css"; 
 
-// Компонент AboutUsPage
 const AboutUsPage = () => {
   return (
     <section className="about-us-page">

@@ -8,7 +8,7 @@
   }
   
   .documents-list a {
-    color: #5578DF; /* Синий цвет для ссылок */
+    color: #5578DF; 
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
@@ -16,8 +16,8 @@
   
   .documents-list a:hover {
     text-decoration: underline;
-    color: #3e5db4; /* Тёмно-синий цвет при наведении */
+    color: #3e5db4; 
   }
   
   .documents-list a:active {
-                color: #2c4975; /* Цвет при активном нажатии */}
+                color: #2c4975; 

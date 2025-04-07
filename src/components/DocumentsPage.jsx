@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/DocumentsPage.css'; // Подключаем стили
+import '../styles/DocumentsPage.css'; 
 
 const DocumentsPage = () => {
   return (

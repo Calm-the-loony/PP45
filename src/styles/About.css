@@ -14,9 +14,9 @@
 
 .about-us-history, .about-us-careers {
   margin-bottom: 40px;
-  text-align: left; /* Выравнивание текста по левому краю */
+  text-align: left; 
   max-width: 800px;
-  margin: 0 auto; /* Центрирование блоков */
+  margin: 0 auto; 
 }
 
 .about-us-history p, .about-us-careers p {
@@ -40,7 +40,7 @@
   box-shadow: 0 4px 8px #2f80ed;
   margin-bottom: 40px;
   text-align: center; 
-  width: 70%; /* Сделано уже */
+  width: 70%; 
   margin: 0 auto;
 }
 
